@@ -56,9 +56,43 @@ $(document).on('ready', function(){
 
 	toArray(4,6,1)
 
-	Write a function called 'startsWithA' which takes a single 
-	string argument and returns true if the given string's first letter 
-	is 'A' and false otherwise.
+	// Write a function called 'startsWithA' which takes a single 
+	// string argument and returns true if the given string's first letter 
+	// is 'A' and false otherwise.
+
+	var startsWithA = function(string) {
+		if (string.charAt(0) === ('a' || 'A')) {
+			return true;
+		} else {
+			return false;
+		}
+
+	}
+		
+	console.log(startsWithA('cat'))
+	console.log(startsWithA('apple'))
+
+	// Write a function called 'excite' which takes a single string argument 
+	// and returns the given string plus three exclamation marks.
+
+	var excite = function(string) {
+		return string + "!!!"
+	} 
+	
+	console.log(excite('OMG'));
+
+	// Write a function called 'sun' which takes a single string argument and returns true if
+	// the string contains the word 'sun' within it. You may use the indexOf method that is
+	// built-in to strings, or you can do it manually with a for loop.
+
+	
+
+
+
+	
+
+	
+
 
 
 
