@@ -85,11 +85,40 @@ $(document).on('ready', function(){
 	// the string contains the word 'sun' within it. You may use the indexOf method that is
 	// built-in to strings, or you can do it manually with a for loop.
 
-	
+	var sun = function(string) {
+		if (string.indexOf('sun') === (-1)) {
+			return false;
+		} else {
+			return true;
+		}
+	}
 
+	console.log(sun('suntastic'));
+	console.log(sun('attic'));
 
+// Write a function called 'tiny' which takes a single number argument and 
+// returns true if the number is between 0 and 1.
 
-	
+	var tiny = function(number) {
+		if (1 > number > 0)  {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+// Write a function called 'getSeconds' which takes a single string argument in the format 
+// 'MM:SS' (hours, minutes, and seconds) and returns the total number of seconds represented by that timespan.
+
+ 	var getSeconds = function(hh, mm, ss) {
+ 		var hourSec = hh*3600;
+ 		var minSec = mm*60;
+ 		var sec = ss;
+ 		var totalSec = (hourSec + minSec + sec);
+ 		console.log(totalSec);
+ 	}
+
+	getSeconds(1,34,45);
 
 	
 
